@@ -1,0 +1,15 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(172, 172, 172, 0.1);
+  padding: 15px 0px;
+  border-top: 1px solid rgba(172, 172, 172, 0.5);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav_a {
+  color: rgba(0, 0, 0, 0.75);
+}

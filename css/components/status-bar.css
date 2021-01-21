@@ -1,0 +1,29 @@
+.status-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; /*only width 100% exceeds screen*/
+  /*left: 0; right: 0; is option 2*/
+  justify-content: center; /*css hack for middle align*/
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33.3%; /*css hack for middle align*/
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center; /*css hack for middle align*/
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end; /*css hack for middle align*/
+  align-items: center;
+}
+.status-bar__column:first-child span {
+  margin-right: 3px;
+}
+.status-bar__column .fa-battery-three-quarters {
+  margin: 0px 3px;
+}

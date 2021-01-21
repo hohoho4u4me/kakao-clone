@@ -1,0 +1,54 @@
+.index-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+}
+.index-header__title {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 550;
+}
+.index-header__text {
+  /*width: 80%;*/
+  margin-bottom: 80px;
+  color: grey;
+}
+
+/*Bottom is by not using BEM style. Realized BEM is better*/
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 14px;
+}
+#login-form input:not([type="submit"]) {
+  /*bottom except submit*/
+  transition: border-color 0.2s ease-in-out;
+  border-bottom: 1px solid rgb(37, 37, 37);
+}
+#login-form input {
+  border: none;
+  padding: 16px 0px;
+  font-size: 18px;
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input::placeholder {
+  color: rgb(148, 148, 148);
+}
+#login-form input:nth-child(2) {
+  margin-bottom: 30px;
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow-bright);
+  cursor: pointer;
+  border-radius: 5px;
+}
+#login-form a {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 14px;
+  color: inherit; /*from login-form*/
+}
