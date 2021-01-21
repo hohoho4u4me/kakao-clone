@@ -1,2 +1,3 @@
 # kakao-clone
-first cloning project
+
+first cloning project following nomad coder class.

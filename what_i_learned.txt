@@ -1,0 +1,31 @@
+<coding>
+
+1. BEM
+
+<div class="status-bar">
+    <div class="status-bar__column">
+        =>
+        BEM convection. status-bar__row, status-bar--big etc... easy to read/find
+        Korean link to study BEM https://nykim.work/15
+
+2. css hack for status bar
+ 
+Check style.css and ctrl+f hack
+
+3. css reset
+
+Reset styles automatically made by browser.
+
+<resource>
+
+1. Heroicons
+
+Some free icons by svg
+
+2. font awesome
+
+Some free icons(+fonts) by svg
+
+3. google fonts
+
+Great fonts for css. ex)open sans
