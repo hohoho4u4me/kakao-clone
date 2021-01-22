@@ -16,3 +16,18 @@
   margin-left: 10px;
   font-size: 12px;
 }
+.friends-screen-main {
+  margin: 0px var(--left-space);
+}
+.friends-screen-main__channel-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px 7px 0px;
+  padding-top: 6px;
+  border-top: 1px solid rgb(128, 128, 128, 0.2);
+  color: rgb(128, 128, 128, 0.8);
+  font-size: 13px;
+}
+.friends-screen-main__channel-bar span {
+  font-size: 13px;
+}
