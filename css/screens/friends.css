@@ -1,0 +1,18 @@
+.friends-display-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgb(128, 128, 128, 0.04);
+  font-size: 16px;
+}
+.friends-display-link i {
+  margin: 0px 6px;
+  font-size: 18px;
+  color: rgb(128, 128, 128, 0.35);
+}
+.friends-display-link i:last-child {
+  margin-left: 10px;
+  font-size: 12px;
+}
