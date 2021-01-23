@@ -1,0 +1,11 @@
+.notification {
+  background-color: tomato;
+  color: white;
+  font-size: 20px;
+  display: block; /*giving width*/
+  width: 20px;
+  border-radius: 50%; /*circle*/
+  display: flex; /*centering '1'*/
+  justify-content: center;
+  align-items: center;
+}

@@ -16,6 +16,7 @@
   margin-left: 10px;
   font-size: 12px;
 }
+.chats-screen-main,
 .friends-screen-main {
   margin: 0px var(--left-space);
 }

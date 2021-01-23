@@ -6,8 +6,11 @@
 .user-component {
   justify-content: space-between;
 }
-.user-component__column:last-child {
+.user-component__column {
   color: rgba(128, 128, 128, 0.8);
+}
+.user-component__notification-count {
+  margin-right: 5px;
 }
 .user-component__img {
   margin: 10px;
@@ -21,12 +24,26 @@
   height: 70px;
   border-radius: 25px;
 }
+.user-component__img-m {
+  width: 60px;
+  height: 60px;
+  border-radius: 22px;
+}
 .user-component__name {
   font-size: 20px;
   font-weight: 600;
 }
-.user-component__discription {
+.user-component__description {
   margin-top: 5px;
   font-size: 14px;
   color: rgb(128, 128, 128, 0.7);
+}
+.user-component__notification {
+  position: relative;
+  left: 10px;
+  top: 5px;
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
 }
