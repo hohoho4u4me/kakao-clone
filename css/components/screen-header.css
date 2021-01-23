@@ -16,3 +16,11 @@
 .screen-header__icons span {
   margin: 0px 5px;
 }
+.dot-noti-header-parent {
+  position: relative;
+}
+.dot-noti-header {
+  position: absolute; /*to use this, make parent relative*/
+  right: -8px;
+  top: -1px;
+}

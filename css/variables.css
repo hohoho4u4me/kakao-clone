@@ -2,4 +2,7 @@
   --yellow: #e4bb05;
   --yellow-bright: #fde406;
   --left-space: 15px;
+  --line-grey: rgba(128, 128, 128, 0.3);
+  --light-text-grey: rgba(128, 128, 128, 0.5);
+  --text-grey: rgba(128, 128, 128, 1);
 }

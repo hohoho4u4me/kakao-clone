@@ -1,0 +1,4 @@
+.cross-line {
+  margin: 10px 0px;
+  border-bottom: 1px solid var(--line-grey);
+}
