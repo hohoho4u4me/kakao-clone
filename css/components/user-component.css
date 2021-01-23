@@ -6,7 +6,7 @@
 .user-component {
   justify-content: space-between;
 }
-.user-component__column {
+.user-component__column:last-child {
   color: rgba(128, 128, 128, 0.8);
 }
 .user-component__notification-count {
