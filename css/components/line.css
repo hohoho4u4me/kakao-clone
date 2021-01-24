@@ -2,3 +2,8 @@
   margin: 10px 0px;
   border-bottom: 1px solid var(--line-grey);
 }
+.divider {
+  margin: 0px 6px;
+  height: 13px;
+  border-right: 1px solid var(--text-grey);
+}
