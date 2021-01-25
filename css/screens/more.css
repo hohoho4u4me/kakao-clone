@@ -1,0 +1,39 @@
+.dot-noti-more-parent {
+  position: relative;
+}
+.dot-noti-more {
+  position: absolute; /*to use this, make parent relative*/
+  right: 6px;
+  top: -6px;
+}
+.more-menu {
+  margin-top: 25px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.more-menu .icon-row {
+  margin-bottom: 25px;
+}
+.more-menu .icon-row .icon-row__icon span {
+  text-align: center;
+  font-size: 14px;
+}
+.more-menu > span {
+  position: relative;
+  top: -5px;
+  right: 5px;
+  font-weight: 600;
+}
+.more-menu span + .icon-row {
+  margin-top: 20px;
+}
+.more-menu span + .icon-row .icon-row__icon img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.more-menu span + .icon-row .icon-row__icon span {
+  text-align: center;
+  width: 70px;
+  color: var(--text-grey);
+}

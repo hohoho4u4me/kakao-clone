@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa fa-search"></i></span>
+        <span><i class="fa fa-music"></i></span>
+        <span class="dot-noti-header-parent">
+          <i class="fa fa-cog"></i>
+          <div class="dot-noti-header dot-notification"></div>
+        </span>
+      </div>
+    </header>
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="screenshots/github-icon.PNG"
+            class="user-component__img user-component__img-xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__name">Daniel</h4>
+            <div class="user-component__description">
+              <h6>+1 234-567-8901</h6>
+              <span class="text-in-circle">!</span>
+            </div>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x black"></i>
+        </div>
+      </div>
+      <div class="more-menu">
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="far fa-calendar-check"></i><span>Calendar</span>
+          </div>
+          <div class="icon-row__icon dot-noti-more-parent">
+            <i class="fas fa-inbox"></i><span>Talk Drive</span>
+            <div class="dot-noti-more dot-notification"></div>
+          </div>
+          <div class="icon-row__icon">
+            <i class="far fa-smile"></i><span>Emotions</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-paint-roller"></i><span>Themes</span>
+          </div>
+        </div>
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="far fa-user-circle"></i><span>Account</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="far fa-comments"></i><span>Openchat</span>
+          </div>
+          <div class="icon-row__icon"></div>
+          <div class="icon-row__icon"></div>
+        </div>
+      </div>
+      <div class="cross-line"></div>
+      <div class="more-menu">
+        <span>Suggestions</span>
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <img src="screenshots/australian-shepherd-5902417__340.webp" />
+            <span>Kakao Story</span>
+          </div>
+          <div class="icon-row__icon">
+            <img src="screenshots/github-icon.PNG" />
+            <span>kakao friends</span>
+          </div>
+          <div class="icon-row__icon">
+            <img src="screenshots/bow-lake-5854210__340.webp" />
+            <span>Friends Gem</span>
+          </div>
+          <div class="icon-row__icon">
+            <img src="screenshots/australian-shepherd-5902417__340.webp" />
+            <span>Kakao Dogs</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--nav>ul>li*4>a-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav_a" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav_a" href="chats.html">
+            <i class="far fa-comment fa-2x"></i>
+            <span class="notification nav_comment-notification">1</span>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav_a" href="search.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav_a" href="more.html">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+            <div class="dot-notification nav_ellipsis-notification"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/f594706907.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
