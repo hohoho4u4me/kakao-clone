@@ -1,0 +1,31 @@
+#chatting-room {
+  background-color: rgb(198, 231, 253);
+  height: 200vh;
+}
+#chatting-room .status-bar {
+  background-color: rgb(198, 231, 253);
+}
+#chatting-room .chatting-header {
+  background-color: rgb(198, 231, 253);
+}
+
+.chatting-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 79px;
+  padding-top: 17px;
+}
+.chatting-screen__timestamp {
+  height: 20px;
+  background-color: rgb(107, 107, 107, 0.25);
+  padding: 9px 13px 3px 13px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+.message-row__img {
+  height: 50px;
+  width: 50px;
+}

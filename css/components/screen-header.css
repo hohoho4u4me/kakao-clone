@@ -24,3 +24,32 @@
   right: -8px;
   top: -1px;
 }
+
+.chatting-header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  box-sizing: border-box; /*only width 100% exceeds screen*/
+  /*left: 0; right: 0; is option 2*/
+  justify-content: center; /*css hack for middle align*/
+  padding: 15px 18px;
+  font-size: 23px;
+}
+.chatting-header__column {
+  width: 33.3%; /*css hack for middle align*/
+}
+.chatting-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center; /*css hack for middle align*/
+  font-weight: 600;
+}
+.chatting-header__column:last-child {
+  display: flex;
+  justify-content: flex-end; /*css hack for middle align*/
+  align-items: center;
+}
+.chatting-header__column:last-child i {
+  margin-left: 16px;
+}

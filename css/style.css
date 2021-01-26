@@ -17,6 +17,7 @@
 @import "screens/friends.css";
 @import "screens/search.css";
 @import "screens/more.css";
+@import "screens/chatting-room.css";
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -26,7 +27,8 @@ body {
   flex-direction: column;
 }
 .main-screen {
-  margin: 0px var(--left-space);
+  margin-left: var(--left-space);
+  margin-right: var(--left-space);
 }
 .fixed {
   position: fixed;
