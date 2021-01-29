@@ -1,12 +1,14 @@
 #chatting-room {
   background-color: rgb(198, 231, 253);
-  height: 200vh;
+  height: 120vh;
 }
 #chatting-room .status-bar {
   background-color: rgb(198, 231, 253);
+  z-index: 2;
 }
 #chatting-room .chatting-header {
   background-color: rgb(198, 231, 253);
+  z-index: 1;
 }
 
 .chatting-screen {
@@ -14,9 +16,12 @@
   flex-direction: column;
   align-items: center;
   margin-top: 79px;
+  margin-left: 11px;
+  margin-right: 11px;
   padding-top: 17px;
 }
 .chatting-screen__timestamp {
+  margin-bottom: 18px;
   height: 20px;
   background-color: rgb(107, 107, 107, 0.25);
   padding: 9px 13px 3px 13px;
@@ -25,7 +30,79 @@
   color: white;
   font-size: 13px;
 }
+.chatting-screen__messages {
+  width: 100%;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
 .message-row__img {
   height: 50px;
   width: 50px;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+.message-row__info {
+  display: flex;
+  flex-direction: column;
+}
+.message-row__sender {
+  opacity: 0.68;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  font-weight: 600;
+}
+.message-row__message {
+  position: relative;
+  width: 300px;
+}
+.message-row__bubble-top {
+  position: absolute;
+  left: -12px;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 7px -4px 0px 0px white;
+  transform: rotate(16deg);
+}
+.message-row__bubble {
+  background-color: white;
+  border-radius: 14px;
+  padding: 7px 10px 7px 10px;
+  font-size: 20px;
+}
+.message-row__time {
+  position: relative;
+  top: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.68;
+}
+.message-row--mine {
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+.message-row--mine .message-row__message {
+  display: flex;
+  justify-content: flex-end;
+}
+.message-row--mine .message-row__bubble {
+  background-color: var(--yellow-bright);
+  max-width: 100%;
+}
+.message-row--mine .message-row__bubble-top {
+  position: absolute;
+  left: 297px;
+  top: 4px;
+  box-shadow: 7px -4px 0px 0px var(--yellow-bright);
+  transform: scaleX(-1);
+}
+.message-row--mine .message-row__time {
+  position: relative;
+  top: 18px;
+  right: 5px;
 }
