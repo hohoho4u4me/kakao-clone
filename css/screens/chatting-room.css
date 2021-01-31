@@ -106,3 +106,63 @@
   top: 18px;
   right: 5px;
 }
+.keyboard-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+.keyboard-screen__input-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 3px;
+  color: var(--text-grey);
+}
+.keyboard-screen__input-row > i:first-child {
+  font-size: 25px;
+  margin: 10px 12px 10px 12px;
+}
+.keyboard-screen__input-row input {
+  border: 1px solid var(--light-text-grey);
+  width: 100%;
+  padding: 8px 6px 8px 6px;
+  border-radius: 20px 0px 0px 20px;
+  border-right: none;
+  font-size: 18px;
+  /*margin-right: 82px;*/
+}
+.keyboard-screen__input-next {
+  margin-right: 14px;
+  border: 1px solid var(--light-text-grey);
+  border-left: none;
+  height: 37px;
+  width: 105px;
+  border-radius: 0px 20px 20px 0px;
+}
+.keyboard-screen__input-row > i:nth-child(4) {
+  position: absolute;
+  right: 59px;
+  font-size: 23px;
+  opacity: 0.8;
+}
+.keyboard-screen__input-row button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5px;
+  right: 16px;
+  height: 35px;
+  width: 35px;
+  border: 1px solid var(--light-text-grey);
+  border-radius: 50%;
+  background-color: var(--yellow-bright);
+}
+.keyboard-screen__input-row button i {
+  font-size: 20px;
+}
