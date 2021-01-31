@@ -10,7 +10,22 @@
   background-color: rgb(198, 231, 253);
   z-index: 1;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  /*Don't know the reason, but we need 20% or less time not to make animation buggy
+  Every time I refresh this,the screen goes 30px up. 0% transform: none and 20% time is the key.*/
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .chatting-screen {
   display: flex;
   flex-direction: column;
@@ -19,6 +34,7 @@
   margin-left: 11px;
   margin-right: 11px;
   padding-top: 17px;
+  animation: fadeIn 0.8s ease-in-out;
 }
 .chatting-screen__timestamp {
   margin-bottom: 18px;
@@ -120,17 +136,19 @@
   align-items: center;
   position: relative;
   width: 100%;
-  margin-top: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: var(--text-grey);
 }
 .keyboard-screen__input-row > i:first-child {
   font-size: 25px;
-  margin: 10px 12px 10px 12px;
+  margin-left: 12px;
 }
 .keyboard-screen__input-row input {
   border: 1px solid var(--light-text-grey);
   width: 100%;
   padding: 8px 6px 8px 6px;
+  margin-left: 12px;
   border-radius: 20px 0px 0px 20px;
   border-right: none;
   font-size: 18px;
@@ -141,7 +159,7 @@
   border: 1px solid var(--light-text-grey);
   border-left: none;
   height: 37px;
-  width: 105px;
+  width: 90px;
   border-radius: 0px 20px 20px 0px;
 }
 .keyboard-screen__input-row > i:nth-child(4) {
@@ -155,7 +173,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 5px;
+  top: 2px;
   right: 16px;
   height: 35px;
   width: 35px;
@@ -165,4 +183,8 @@
 }
 .keyboard-screen__input-row button i {
   font-size: 20px;
+}
+
+.keyboard-screen__input-row:focus-within > i:first-child {
+  display: none;
 }
