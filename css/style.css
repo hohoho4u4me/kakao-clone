@@ -21,6 +21,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 68px;
 }
 .flex-column {
   display: flex;
